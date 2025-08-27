@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover delicious recipes with clear ingredients and step-by-step instructions.">
+    <meta name="theme-color" content="#000000">
+    <title>Recipe Finder - Your Culinary Companion</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23000'/%3E%3Cpath d='M22 18c-1.657 0-3 1.343-3 3v15a3 3 0 1 0 6 0V21c0-1.657-1.343-3-3-3zm14 0c-1.657 0-3 1.343-3 3v10.5c0 3.59 2.91 6.5 6.5 6.5H42v5a3 3 0 1 0 6 0V21c0-1.657-1.343-3-3-3H36z' fill='white'/%3E%3C/svg%3E">
+</head>
+<body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1><i class="fas fa-utensils"></i> Recipe Finder</h1>
+                <p>Discover delicious recipes and cooking instructions</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="search-section" id="main">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search for a recipe (e.g., pasta, chicken, cake...)" class="search-input">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+                <div class="popular-tags">
+                    <span class="tag" data-recipe="pasta">Pasta</span>
+                    <span class="tag" data-recipe="chicken">Chicken</span>
+                    <span class="tag" data-recipe="cake">Cake</span>
+                    <span class="tag" data-recipe="salad">Salad</span>
+                    <span class="tag" data-recipe="pizza">Pizza</span>
+                    <span class="tag" data-recipe="indian">Indian</span>
+                </div>
+            </section>
+
+            <section class="recipes-section">
+                <div id="recipesContainer" class="recipes-grid">
+                    <!-- Recipes will be loaded here -->
+                </div>
+            </section>
+        </main>
+
+        <!-- Recipe Modal -->
+        <div id="recipeModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="recipeTitle" tabindex="-1">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalContent">
+                    <!-- Recipe details will be loaded here -->
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Made with <span aria-hidden="true">❤</span> for food lovers · <a href="https://fontawesome.com" target="_blank" rel="noopener">Icons</a> · <a href="https://fonts.google.com/specimen/Poppins" target="_blank" rel="noopener">Poppins</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
