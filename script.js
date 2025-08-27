@@ -1535,9 +1535,9 @@ const recipes = [
 ];
 
 // Optional Google Image Search config (set to true and fill keys to enable)
-const GOOGLE_CSE_ENABLED = true; // set true to use Google Images
-const GOOGLE_API_KEY = "AIzaSyDMjc7CF82JNW5Qs63pT_Y6t7v7xpvyhjw"; // provided API key
-const GOOGLE_CX = "02f7fc121ee2940e2"; // provided Custom Search Engine ID
+const GOOGLE_CSE_ENABLED = ; // set true to use Google Images
+const GOOGLE_API_KEY = "AIzac7CF82JNW5Qs63pT_Y6t7v7xpvyhjw"; // provided API key
+const GOOGLE_CX = "02f71ee2940e2"; // provided Custom Search Engine ID
 
 // Optional per-recipe image overrides (guaranteed hero images)
 const RECIPE_IMAGE_OVERRIDES = {
